@@ -1,0 +1,2 @@
+# Python
+ buraya yaz
