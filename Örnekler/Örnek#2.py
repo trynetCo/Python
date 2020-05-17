@@ -6,7 +6,7 @@ print("Başarıyla kayıt oldun \nŞimdi Giriş yap:") # "\n" bir alt satıra ge
 c = input("Kullanıcı Adın: ") #Kullanıcıdan daha önceki bilgiyi istiyoruz
 d = input("Şifren: ")
 if (a != c or b != d): # "if" burda koşul anlamı ekliyor "!=" ise eşit değilse anlamına geliyor
-    #"or" ise bir bağlaç türkçedeki ve, veya bağlaçları ile aynı işmende kullanılıyor ama ingilizcesi. Bilmiyorsanız araştıra bilirsiniz.
+    #"or" ise bir bağlaç türkçedeki ve, veya bağlaçları ile aynı işlemde kullanılıyor ama ingilizcesi. Bilmiyorsanız araştıra bilirsiniz.
 
     print("Yanlış giriş yaplıdı lütfen tekrar deneyin")# Koşul doğru ise bu alt satıra geçiyor
 else: #"else" değilse anlamına gelir ve if doğru değilse bu kısıma geçer
