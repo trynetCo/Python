@@ -1,36 +1,39 @@
 while(True):
     txt = open("Notlar.txt", "a")
     sinif = input("Sınıfı yazınız: ")
-    ogr = int(input("Öğrenci Sayısını girin"))
+    ogr = int(input("Öğrenci Sayısını girin: "))
     print("\n--------{}--------\n".format(sinif),file=txt)
     while ogr > 0:
         nota = "str"
-        isim = input("İsminizi ve Soyadınızı girin: ")
-        vize = int(input("Vize puanınızı girin: "))
-        final = int(input("Final puanınızı girin: "))
+        isim = input("İsim ve soyisim girin: ")
+        vize = int(input("Vize puanı girin: "))
+        final = int(input("Final puanı girin: "))
         if(vize > 100 or final > 100):
+            print("Vize Yada Final Notunu Yanlış Girdiniz Lütfen Bilgileri En Baştan Yazın")
+            continue
+        if(vize < 0 or final < 0):
             print("Vize Yada Final Notunu Yanlış Girdiniz Lütfen Bilgileri En Baştan Yazın")
             continue
         vizes = float(40 * vize / 100)
         finals = float(60 * final / 100)
-        print("Vize puanın {} ".format(vizes))
-        print("Final Puanın {} ".format(finals))
+        print("Vize puanı {} ".format(vizes))
+        print("Final Puanı {} ".format(finals))
         toplam = float(finals + vizes)
-        print("Toplam Puanın {}".format(toplam))
+        print("Toplam Puanı {}".format(toplam))
         if(toplam >= 85):
-            print("AA aldınız")
+            print("AA aldı")
             nota = "AA"
         elif(toplam >= 70):
-            print("BA aldınız")
+            print("BA aldı")
             nota = "BA"
         elif(toplam >= 60):
-           print("BB aldınız")
+           print("BB aldı")
            nota = "BB"
         elif(toplam >= 50):
-            print("CB aldınız")
+            print("CB aldı")
             nota = "CB"
         elif(toplam >= 40):
-            print("CC aldınız")
+            print("CC aldı")
             nota = "CC"
         elif(toplam <= 39):
             print("FF aldınız")
