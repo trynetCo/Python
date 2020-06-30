@@ -50,8 +50,8 @@ while True:
         print(2)
 
     if sec == 3:
-        s12k = input("Kitapın Numarasını Girin: ")
-        cursor.execute("DELETE from kütüphane where numara = ?", (s12k,))
+        delete = input("Kitapın Numarasını Girin: ")
+        cursor.execute("DELETE from kütüphane where numara = ?", (delete,))
         connet.commit()
         print("\nSileme işlemi başarılı\n")
 
